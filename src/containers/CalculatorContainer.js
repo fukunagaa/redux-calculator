@@ -6,6 +6,7 @@ import * as actions from '../actions';
 import NumBtn from '../components/NumBtn';
 import PlusBtn from '../components/PlusBtn';
 import Result from '../components/Result';
+import Input from '../components/Input';
 
 class CalculatorContainer extends Component {
   render() {
@@ -31,7 +32,7 @@ class CalculatorContainer extends Component {
           <NumBtn n={0} onClick={() => actions.onNumClick(0)} />
           <PlusBtn onClick={actions.onPlusClick} />
         </div>
-        <Result result={calculator.inputValue} />
+        <Input input={calculator.inputValue} />
         <Result result={calculator.resultValue} />
       </div>
     )
